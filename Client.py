@@ -27,7 +27,7 @@ done = False
 while not done:
     input_text = input("Text: ")
     source_lang = "en"
-    target_lang = "ig"
+    target_lang = "fr"
     translated_text = translate_text(input_text, source_lang, target_lang, max_length=100)
     client.send((translated_text).encode('utf-8'))
     msg = client.recv(1024).decode('utf-8')
