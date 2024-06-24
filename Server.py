@@ -35,7 +35,7 @@ while not done:
     else:
         print(msg)
     input_text = input("Text: ")
-    source_lang = "ig" 
+    source_lang = "fr" 
     target_lang = "en"
     translated_text = translate_text(input_text, source_lang, target_lang, max_length=100)
     client.send((translated_text).encode('utf-8'))
